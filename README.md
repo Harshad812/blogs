@@ -12,7 +12,6 @@ GitHub: [https://github.com/Harshad812/blogs](https://github.com/Harshad812/blog
 
 - ✅ App Router (Next.js 14)
 - ✅ TypeScript
-- ✅ Tailwind CSS
 - ✅ Modular & Scalable Folder Structure
 - ✅ SVG Asset Handling
 - ✅ Context API for Global State
