@@ -1,0 +1,96 @@
+.addCommentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  border-radius: 12px;
+  background-color: #000000;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textFields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 25px;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.commentField {
+  height: 100%;
+}
+
+.bottomPanel {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-block: 4px;
+  padding-right: 4px;
+  padding-left: 14px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+}
+
+.ratingLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.bottomPanelContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.buttonSubmit {
+  height: 48;
+  width: 109px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  gap: 8px;
+  border-radius: 12px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

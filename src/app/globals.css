@@ -1,0 +1,81 @@
+:root {
+  --background: #fafafa;
+  --foreground: #10152e;
+  --font-family: "Lato", sans-serif;
+  --font-size-medium: 16px;
+  --line-height-medium: 24px;
+  --letter-spacing-body: 1px;
+
+  --padding-block-small: 64px;
+  --container-medium: 1249px;
+
+  --size-2: 8px;
+  --size-3: 12px;
+  --size-4: 16px;
+  --size-5: 20px;
+  --size-6: 24px;
+  --size-8: 32px;
+  --size-10: 40px;
+  --size-12: 48px;
+  --size-14: 56px;
+  --size-16: 64px;
+  --size-20: 80px;
+  --size-24: 96px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.layout {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .layout {
+    width: 2653px;
+    margin-left: -733px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .layout {
+    width: 100%;
+    margin-left: 2309px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .layout {
+    width: 757px;
+    padding: 0 30px;
+    margin-left: 4323px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout {
+    width: 340px;
+    padding: 0 15px;
+    margin-left: 6337px;
+  }
+}

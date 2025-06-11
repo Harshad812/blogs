@@ -1,0 +1,32 @@
+.main {
+  width: 100%;
+  max-width: var(--container-medium); /* applies the 944px limit */
+  padding: 0 24.5px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background);
+  margin: 0 auto;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.additionalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 24px 20px;
+  max-width: 341px;
+
+}
+@media (max-width:991px){
+  .additionalContent{
+    padding: 24px 15px;
+    max-width: 263px;
+  }
+}

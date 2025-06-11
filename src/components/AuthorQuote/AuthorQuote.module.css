@@ -1,0 +1,89 @@
+.authorQuoteContainer {
+}
+
+.authorQuote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--size-6);
+  padding-inline: var(--size-6);
+  padding-bottom: 30px;
+  border-top: 1px solid #e5e6ea; /* or use a variable for color */
+  border-bottom: 1px solid #e5e6ea;
+  gap: var(--size-3);
+}
+
+.authorProfile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  align-items: center;
+  justify-content: center;
+}
+
+.authorName {
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--letter-spacing-body);
+  color: #10152e;
+}
+
+.profileImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.quoteText {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--letter-spacing-body);
+  vertical-align: bottom;
+  color: #4e5265;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* padding-top: var(--size-8); */
+}
+
+.previousButton,
+.nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--letter-spacing-body);
+  color: #05091c;
+  background-color: transparent;
+  border: 1px solid #05091c;
+  cursor: pointer;
+  vertical-align: bottom;
+  border-radius: 2px;
+  padding-block: var(--size-2);
+  padding-inline: var(--size-4);
+  gap: 10px;
+}
+
+.previousSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-2);
+}
+
+.nextSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--size-2);
+}

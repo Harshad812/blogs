@@ -1,0 +1,93 @@
+.relatedArticle {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  background-color: #f5f5f6;
+  align-items: center;
+}
+
+.relatedArticleContainer {
+  width: 100%;
+  max-width: var(--container-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background);
+  margin: 0 auto;
+  background-color: #f5f5f6;
+}
+
+.relatedWrapper {
+  max-width: 1033px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24.5px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cardList {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.image{
+  width: 100%;
+}
+.cardTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  vertical-align: bottom;
+  text-transform: capitalize;
+}
+
+.cardDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  vertical-align: bottom;
+  color: #4e5265;
+  overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+}
+
+.authorName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: bottom;
+  color: #000000;
+}
+@media (max-width:991px){
+  .cardList{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardTitle{
+    font-size: 22px;
+  }
+}

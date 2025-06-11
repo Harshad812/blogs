@@ -1,0 +1,44 @@
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.redColor {
+  background-color: #ff0412 !important;
+}
+
+.orangeColor {
+  background-color: #ff6700 !important;
+}
+
+.greenColor {
+  background-color: #00ba5c !important;
+}
+
+.blueColor {
+  background-color: #1c9af4 !important;
+}
+
+.yellowColor {
+  background-color: #ffb416 !important;
+}
+
+.ratingItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px 10px 16px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.emoji {
+  height: 24px;
+  width: 24px;
+}

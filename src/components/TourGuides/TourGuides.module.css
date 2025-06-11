@@ -1,0 +1,91 @@
+.tourGuides {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
+  /* padding: var(--size-6) var(--size-5); */
+}
+
+.tourGuideTitle {
+  font-family: var(--font-family);
+  font-size: var(--size-5);
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: 1px;
+  line-height: 28.13px;
+}
+
+.guidesList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tourGuideCard {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dedede;
+  gap: 15px;
+}
+.tourGuideCard:last-child{
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.guideInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guideName {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--size-4);
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+.locationIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.guideLocation {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-2);
+}
+
+.guideLocation {
+  font-family: var(--font-family);
+  font-size: var(--size-4);
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+@media (max-width:991px){
+  .profile{
+    gap: 15px;
+  }
+  .guideLocation{
+    gap: 5px;
+    font-size: 14px;
+  }
+}
