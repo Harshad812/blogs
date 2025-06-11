@@ -5,6 +5,7 @@
   padding-bottom: var(--padding-block-small);
   margin: 0 auto;
   flex: 1 1;
+  max-width: calc(100% - 361px);
 }
 
 .blogTitle {
@@ -93,17 +94,21 @@
   vertical-align: bottom;
 }
 @media (max-width: 991px) {
-    .desktopContainer{
-      display: none;
-    }
+  .desktopContainer {
+    display: none;
+  }
+  .blogContent {
+    max-width: calc(100% - 285px);
+  }
 }
 @media (max-width: 699px) {
-  .blogTitle{
+  .blogTitle {
     flex-direction: column;
     height: auto;
   }
-  .blogContent{
+  .blogContent {
     padding-bottom: 32px;
+    max-width: 100%;
   }
 }
 @media (max-width: 575px) {
