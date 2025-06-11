@@ -1,4 +1,5 @@
-import React, { Dispatch, FC, SetStateAction } from "react";
+"use client";
+import React, { Dispatch, FC, SetStateAction, useEffect } from "react";
 import styles from "./AddRating.module.css";
 import BedIcon from "@/assets/svg/bed.svg";
 import AverageIcon from "@/assets/svg/average.svg";
@@ -21,48 +22,54 @@ export const AddRating: FC<{
     null
   );
 
-  const handleRatingClick = (value: RatingItem) => {
-    setSelectedRating(value);
-    setRating(value.value);
-  };
+  const handleRatingClick = React.useCallback(
+    (value: RatingItem) => {
+      setSelectedRating(value);
+      setRating(value.value);
+    },
+    [setRating]
+  );
 
-  const rating = [
-    {
-      emoji: "/images/bed.svg",
-      label: "Bed",
-      value: 1,
-      icon: BedIcon,
-      fill: "#FF0412",
-    },
-    {
-      emoji: "/images/average.svg",
-      label: "Average",
-      value: 2,
-      icon: AverageIcon,
-      fill: "#FF6700",
-    },
-    {
-      emoji: "/images/normal.svg",
-      label: "Normal",
-      value: 3,
-      icon: NormalIcon,
-      fill: "#FFB416",
-    },
-    {
-      emoji: "/images/nice.svg",
-      label: "Nice",
-      value: 4,
-      icon: NiceIcon,
-      fill: "#1C9AF4",
-    },
-    {
-      emoji: "/images/good.svg",
-      label: "Good",
-      value: 5,
-      icon: GoodIcon,
-      fill: "#00BA5C",
-    },
-  ];
+  const rating = React.useMemo(
+    () => [
+      {
+        emoji: "/images/bed.svg",
+        label: "Bed",
+        value: 1,
+        icon: BedIcon,
+        fill: "#FF0412",
+      },
+      {
+        emoji: "/images/average.svg",
+        label: "Average",
+        value: 2,
+        icon: AverageIcon,
+        fill: "#FF6700",
+      },
+      {
+        emoji: "/images/normal.svg",
+        label: "Normal",
+        value: 3,
+        icon: NormalIcon,
+        fill: "#FFB416",
+      },
+      {
+        emoji: "/images/nice.svg",
+        label: "Nice",
+        value: 4,
+        icon: NiceIcon,
+        fill: "#1C9AF4",
+      },
+      {
+        emoji: "/images/good.svg",
+        label: "Good",
+        value: 5,
+        icon: GoodIcon,
+        fill: "#00BA5C",
+      },
+    ],
+    []
+  );
 
   const colorMap: Record<string, string> = {
     Bed: styles.redColor,
@@ -71,6 +78,10 @@ export const AddRating: FC<{
     Nice: styles.blueColor,
     Good: styles.greenColor,
   };
+
+  useEffect(() => {
+    handleRatingClick(rating[4]);
+  }, [handleRatingClick, rating]);
 
   return (
     <div className={styles.ratingContainer}>
