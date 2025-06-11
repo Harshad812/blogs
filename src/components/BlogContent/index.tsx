@@ -93,7 +93,9 @@ export const BlogContent: React.FC<BlogContentProps> = () => {
         })}
       </div>
       {/* author quote */}
-      <AuthorQuote />
+      <div className={styles.desktopContainer}>
+        <AuthorQuote />
+      </div>
     </div>
   );
 };

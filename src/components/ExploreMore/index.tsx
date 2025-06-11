@@ -1,16 +1,22 @@
+"use client";
 import Image from "next/image";
 import styles from "./ExploreMore.module.css";
-import { FC } from "react";
+import { FC, useRef } from "react";
+import Slider from "react-slick";
 
-const ExploreMoreCard: FC<{
-  item: {
-    id: number;
-    title: string;
-    date: string;
-    image: string;
-    description: string;
-  };
-}> = ({ item }) => {
+interface CardItem {
+  id: number;
+  title: string;
+  date: string;
+  image: string;
+  description: string;
+}
+
+interface ExploreMoreCardProps {
+  item: CardItem;
+}
+
+const ExploreMoreCard: FC<ExploreMoreCardProps> = ({ item }) => {
   return (
     <div className={styles.exploreMoreCard}>
       <Image
@@ -57,12 +63,61 @@ export const ExploreMore = () => {
     },
   ];
 
+  const sliderRef = useRef<Slider>(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className={styles.exploreMore}>
       <h1 className={styles.exploreMoreTitle}>Explore More</h1>
-      {data.map((item, idx) => (
-        <ExploreMoreCard key={idx} item={item} />
-      ))}
+      <div className={styles.cardList}>
+        {data.map((item, idx) => (
+          <ExploreMoreCard key={idx} item={item} />
+        ))}
+      </div>
+      <div className={styles.cardSlider}>
+        <Slider ref={sliderRef} {...settings}>
+          {data.map((item, idx) => (
+            <ExploreMoreCard key={idx} item={item} />
+          ))}
+        </Slider>
+        <div className={styles.paginationContainer}>
+          <div className={styles.previousSection}>
+            <button
+              className={styles.previousButton}
+              onClick={() => sliderRef.current?.slickPrev()}
+            >
+              <Image
+                src={"/images/left-arrow.svg"}
+                alt="Lest Arrow"
+                height={16}
+                width={16}
+              />
+              Previous
+            </button>
+          </div>
+          <div className={styles.nextSection}>
+            <button
+              className={styles.nextButton}
+              onClick={() => sliderRef.current?.slickNext()}
+            >
+              Next
+              <Image
+                src={"/images/right-arrow.svg"}
+                alt="Right Arrow"
+                height={16}
+                width={16}
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

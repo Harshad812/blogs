@@ -3,6 +3,8 @@
   max-width: var(--container-medium); /* applies the 944px limit */
   padding-top: var(--padding-block-small);
   padding-bottom: var(--padding-block-small);
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +18,7 @@
 .breadcrumb {
   font-size: 14px;
   font-weight: 500;
-  color: #262D4D;
+  color: #262d4d;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -28,7 +30,7 @@
 .link {
   cursor: pointer;
   text-decoration: none;
-  color: #262D4D;
+  color: #262d4d;
 }
 
 .link:hover {
@@ -41,8 +43,16 @@
   color: var(--foreground);
   font-family: var(--font-family);
 }
-@media (max-width:991px){
+
+@media (max-width: 991px) {
   .heading {
     font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .headerWrapper {
+    max-width: 310px;
   }
 }

@@ -2,9 +2,20 @@
   display: flex;
   flex-direction: column;
   display: flex;
-  flex-direction: column;
   gap: var(--size-10);
+  width: 100%;
   /* padding: var(--size-6) var(--size-5); */
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: var(--size-10);
+}
+
+.cardSlider {
+  display: none;
 }
 
 .exploreMoreTitle {
@@ -27,13 +38,15 @@
   flex-direction: column;
   gap: 15px;
 }
-.exploreImage{
+
+.exploreImage {
+  height: 165px;
   width: 100%;
 }
 .cardTitleContainer {
   display: flex;
   align-items: center;
-  gap:10px;
+  gap: 10px;
 }
 .cardTitleText {
   color: #000000;
@@ -43,8 +56,8 @@
   line-height: 100%;
   letter-spacing: 1px;
 }
-.cardLines{
-color: #DEDEDE;
+.cardLines {
+  color: #dedede;
 }
 .postDate {
   color: #757575;
@@ -63,8 +76,71 @@ color: #DEDEDE;
   line-height: 24px;
   letter-spacing: 1px;
 }
-@media (max-width:991px){
-  .exploreMoreCard{
+
+@media (max-width: 991px) {
+  .exploreMoreCard {
     gap: 25px;
+  }
+}
+@media (max-width: 699px) {
+  .exploreImage {
+    height: 265px;
+  }
+  .cardList {
+    display: none;
+  }
+
+  .cardSlider {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+  }
+  .previousSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-2);
+  }
+
+  .nextSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--size-2);
+  }
+  .paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* padding-top: var(--size-8); */
+  }
+
+  .previousButton,
+  .nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family), Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-body);
+    color: #05091c;
+    background-color: transparent;
+    border: 1px solid #05091c;
+    cursor: pointer;
+    vertical-align: bottom;
+    border-radius: 2px;
+    padding-block: var(--size-2);
+    padding-inline: var(--size-4);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .exploreImage {
+    height: 165px;
   }
 }

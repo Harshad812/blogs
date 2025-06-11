@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-10);
-  /* padding: var(--size-6) var(--size-5); */
 }
 
 .tourGuideTitle {
@@ -27,7 +26,7 @@
   border-bottom: 1px solid #dedede;
   gap: 15px;
 }
-.tourGuideCard:last-child{
+.tourGuideCard:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
@@ -80,12 +79,17 @@
   letter-spacing: 1px;
   line-height: 24px;
 }
-@media (max-width:991px){
-  .profile{
+@media (max-width: 991px) {
+  .profile {
     gap: 15px;
   }
-  .guideLocation{
+  .guideLocation {
     gap: 5px;
     font-size: 14px;
   }
+}
+@media (max-width: 699px) {
+.tourGuides{
+  margin-bottom: 100px;
+}
 }

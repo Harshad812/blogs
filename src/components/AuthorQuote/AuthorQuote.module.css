@@ -23,9 +23,9 @@
 
 .authorName {
   font-family: var(--font-family), Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-medium);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: var(--letter-spacing-body);
   color: #10152e;
 }
@@ -86,4 +86,23 @@
   flex-direction: column;
   align-items: flex-end;
   gap: var(--size-2);
+}
+
+.pageInfo {
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .cardList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pageInfo {
+    display: none;
+  }
 }

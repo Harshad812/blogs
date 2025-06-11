@@ -1,5 +1,6 @@
 import {
   AddComment,
+  AuthorQuote,
   BlogContent,
   Comments,
   ExploreMore,
@@ -17,7 +18,8 @@ export default function Home() {
         title="The Ultimate Guide to Full-Body Workouts"
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Articles", href: "/articles" },
+          { label: "Articles", href: "/" },
+          { label: "" },
         ]}
       />
       <HeroBanner />
@@ -29,7 +31,12 @@ export default function Home() {
             <TourGuides />
           </div>
         </div>
-        <Comments />
+        <div className={styles.wrapperContainer}>
+          <div className={styles.mobileContainer}>
+            <AuthorQuote />
+          </div>
+          <Comments />
+        </div>
         <AddComment />
       </main>
       <RelatedArticle />

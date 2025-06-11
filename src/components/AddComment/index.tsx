@@ -131,7 +131,8 @@ export const AddComment = () => {
           </div>
           <button className={styles.buttonSubmit}>
             <MessageIcon height={16} width={16} />
-            Send
+            <span className={styles.sendOnly}>Send</span>
+            <span className={styles.sendComment}>Send Comment</span>
           </button>
         </div>
       </form>

@@ -62,7 +62,7 @@ export const RelatedArticle = () => {
     <div className={styles.relatedArticle}>
       <div className={styles.relatedArticleContainer}>
         <div className={styles.relatedWrapper}>
-          <h2 className={styles.title}>Related Articles</h2>
+          <h2 className={styles.title}>Related articles</h2>
           <div className={styles.cardList}>
             {relatedArticles.map((article, index) => (
               <RelatedArticleCard key={index} relatedArticles={article} />

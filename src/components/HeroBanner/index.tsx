@@ -5,7 +5,7 @@ export const HeroBanner = () => {
   return (
     <div className={styles.responsiveWrapper}>
       <Image
-        src="/images/hero.png"
+        src="/images/hero.jpg"
         alt="Hero Banner"
         fill
         priority

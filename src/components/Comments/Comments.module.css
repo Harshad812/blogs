@@ -96,3 +96,24 @@
   color: #10152e;
   opacity: 0.85;
 }
+@media(max-width:1499px){
+  .authorDetails{
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .titleContainer{
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .commentText{
+    overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+  }
+}
+@media(max-width:699px){
+.commentText{
+  -webkit-line-clamp: 4;
+}
+}

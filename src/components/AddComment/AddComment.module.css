@@ -94,3 +94,36 @@
   align-items: center;
   justify-content: center;
 }
+
+.sendOnly {
+  display: inline;
+}
+.sendComment {
+  display: none;
+}
+
+@media (max-width: 699px) {
+  .textFields {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bottomPanelContainer {
+    flex-direction: column;
+  }
+  .buttonSubmit {
+    width: 100%;
+  }
+  .bottomPanel {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sendOnly {
+    display: none;
+  }
+  .sendComment {
+    display: inline;
+  }
+}

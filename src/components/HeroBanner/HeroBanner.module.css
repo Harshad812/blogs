@@ -1,6 +1,5 @@
 .responsiveWrapper {
   position: relative;
-  width: 100%;
   max-width: 2653px;
   height: 560px;
   gap: 10px;
@@ -10,9 +9,21 @@
 .responsiveImage {
   object-fit: cover;
 }
-@media (max-width:991px){
+
+@media (max-width: 991px) {
   .responsiveWrapper {
-   margin: 0 30px;
-   height: 232.33px;
+    margin: 0 30px;
+    height: 232.33px;
+  }
+}
+@media (max-width: 699px) {
+  .responsiveWrapper{
+    margin: 0 15px;
+    height: 332.33px;
+  }
+}
+@media (max-width: 575px) {
+  .responsiveWrapper {
+    height: 179px;
   }
 }

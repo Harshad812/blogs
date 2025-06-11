@@ -2,7 +2,6 @@ export { Header } from "./Header";
 export { HeroBanner } from "./HeroBanner";
 export { BlogContent } from "./BlogContent";
 export { AuthorQuote } from "./AuthorQuote";
-export { Pagination } from "./Pagination";
 export { ExploreMore } from "./ExploreMore";
 export { TourGuides } from "./TourGuides";
 export { Rating } from "./Rating";
