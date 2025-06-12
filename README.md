@@ -1,6 +1,6 @@
-# Blogs – Next.js 14 Project
+# Blogs – Next.js Project
 
-A clean and modern blog platform built with **Next.js 14**, **TypeScript**, and **Tailwind CSS** using the new `App Router`. This project demonstrates component-driven development with proper structure and scalability.
+A clean and modern blog platform built with **Next.js**, **TypeScript**, and **Tailwind CSS** using the new `App Router`. This project demonstrates component-driven development with proper structure and scalability.
 
 ## 🔗 Repository
 
@@ -10,7 +10,7 @@ GitHub: [https://github.com/Harshad812/blogs](https://github.com/Harshad812/blog
 
 ## 🚀 Features
 
-- ✅ App Router (Next.js 14)
+- ✅ App Router (Next.js)
 - ✅ TypeScript
 - ✅ Modular & Scalable Folder Structure
 - ✅ SVG Asset Handling
@@ -46,7 +46,7 @@ blogs/
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Framework**: [Next.js](https://nextjs.org/)
 - **Language**: TypeScript
 - **Linting**: ESLint
 - **Formatting**: Prettier
