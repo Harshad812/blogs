@@ -1,6 +1,6 @@
 # Blogs – Next.js Project
 
-A clean and modern blog platform built with **Next.js**, **TypeScript**, and **Tailwind CSS** using the new `App Router`. This project demonstrates component-driven development with proper structure and scalability.
+A clean and modern blog platform built with **Next.js** and **TypeScript** using the new `App Router`. This project demonstrates component-driven development with proper structure and scalability.
 
 ## 🔗 Repository
 
